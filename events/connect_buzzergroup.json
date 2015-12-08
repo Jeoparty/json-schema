@@ -4,13 +4,15 @@
   "required": ["event"],
   "properties": {
     "event": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "type": {
       "enum": ["serial", "keyboard"]
     },
     "device": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     }
   }
 }
