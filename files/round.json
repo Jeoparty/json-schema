@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "required": ["name", "double_jeopardy_count", "points", "categories"],
+  "required": ["name", "points", "categories"],
   "properties": {
     "name": {
       "type": "string"
@@ -36,7 +36,7 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["type", "data", "description", "answer"],
+              "required": ["type", "data"],
               "properties": {
                 "type": {
                   "type": "string"
